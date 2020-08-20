@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title"> Usuarios </h3>
+        <div class="card-text">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th>Número de cuenta</th>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <option *ngFor="let usuario of usuarios" (click)="mostrarDatos(usuarios, $event)">{{ usuario.nombre}} {{ usuario.id}}</option>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<br></br>
+
+<div class="card" *ngIf="usuarioSeleccionado">
+    <div class="card-body">
+        <h3 class="card-title">{{ usuarioSeleccionado.name}}</h3>
+        <div class="card-text">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <div class="form-group">
+                    </div> 
+                    <div class="form-group">
+                    </div>
+                    <div class="form-group">
+                    </div>
+                    <div class="form-group">
+                    </div>
+                    <div class="form-group">
+                    </div>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TrabajoClase"
+    }
+  },
+  "defaultProject": "TrabajoClase",
+  "cli": {
+    "analytics": false
+  }
 }
